@@ -3,29 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Kincaid Design Solution | Civil Design & Reality Capture</title>
+  <meta name="description" content="KDSCAD provides precision civil design, 3D modeling, scan-to-CAD, drone mapping, and LiDAR reality capture workflows." />
+  <title>KDSCAD | Precision Civil Design & Reality Capture</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-  <header>
-    <div class="container navbar">
-      <a href="index.html" class="logo">
-        <h1>KDS CAD</h1>
-        <p>Digital Civil Design & Reality Capture</p>
+  <header class="site-header">
+    <div class="site-shell nav-wrap">
+      <a href="index.html" class="brand" aria-label="KDSCAD home">
+        <div class="brand-logo"><span>KDS</span><span>CAD</span></div>
+        <div class="brand-subtitle">Digital Civil Design & Reality Capture</div>
       </a>
 
-      <nav>
+      <nav class="desktop-nav" aria-label="Main navigation">
         <a href="services.html">Services</a>
         <a href="projects.html">Projects</a>
         <a href="technology.html">Technology</a>
@@ -33,98 +27,76 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a href="contact.html" class="btn-primary">Request Quote</a>
+      <a href="contact.html" class="btn-primary nav-cta">Request Quote</a>
     </div>
   </header>
 
   <main>
-
     <section class="hero">
-      <div class="container hero-grid">
-
-        <div class="hero-content">
+      <div class="site-shell hero-grid">
+        <div class="hero-copy">
           <div class="badge">
-            Veteran-Owned • Precision Design • Technology-Driven
+            <span>Veteran-Owned</span>
+            <span>Precision Design</span>
+            <span>Technology-Driven</span>
           </div>
 
-          <h2>
-            Precision Civil Design
-            <span>& Reality Capture</span>
-          </h2>
+          <h1>Precision Civil Design <span>& Reality Capture</span></h1>
 
-          <p>
-            Advanced LiDAR workflows, scan-to-CAD processing,
-            drone mapping, and civil drafting solutions.
-          </p>
+          <p class="hero-subheadline">Transforming Design Intent Into Buildable Solutions</p>
 
-          <div class="hero-buttons">
+          <div class="hero-actions">
             <a href="contact.html" class="btn-primary">Request Consultation</a>
             <a href="projects.html" class="btn-secondary">View Projects</a>
           </div>
         </div>
 
-        <div class="hero-image">
-          <img
-            src="https://raw.githubusercontent.com/mwkincaid1/Kdscad/c575f8589eee362891061212be8cf7884d5c0e2c/images/Digitized%20Site.png"
-            alt="KDS CAD civil site plan and orthomosaic aerial view"
-          >
+        <div class="hero-media">
+          <img src="Digitized Site.png" alt="Commercial building site and parking lot transitioning from digital design to aerial view">
         </div>
-
       </div>
     </section>
 
-    <section class="services">
-      <div class="container">
+    <section class="workflows" id="services">
+      <div class="site-shell">
+        <p class="section-kicker">Services</p>
+        <h2>Advanced Design Workflows</h2>
 
-        <div class="section-title">
-          <p>Services</p>
-          <h2>Modern Design Workflows</h2>
-        </div>
-
-        <div class="services-grid">
-
-          <div class="service-card">
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <div class="workflow-icon">▧</div>
             <h3>Civil Design</h3>
-            <p>
-              Permit plans, grading plans, utility layouts, and engineering documentation.
-            </p>
-          </div>
+            <p>Site plans, grading, drainage, utility layouts, and permit document preparation.</p>
+          </article>
 
-          <div class="service-card">
-            <h3>3D Surfacing & Dynamic Modeling</h3>
-            <p>
-              Gravity pipes, pressure pipes, surface volumes, and design surfaces.
-            </p>
-          </div>
+          <article class="workflow-card">
+            <div class="workflow-icon">◈</div>
+            <h3>3D Modeling</h3>
+            <p>Detailed 3D models for visualization, coordination, surface design, and constructability.</p>
+          </article>
 
-          <div class="service-card">
-            <h3>Point Cloud Processing</h3>
-            <p>
-              LiDAR registration, terrain extraction, and scan-to-CAD workflows.
-            </p>
-          </div>
+          <article class="workflow-card">
+            <div class="workflow-icon">⌁</div>
+            <h3>Scan-to-CAD</h3>
+            <p>Point cloud processing and scan-to-CAD deliverables with high accuracy.</p>
+          </article>
 
-          <div class="service-card">
+          <article class="workflow-card">
+            <div class="workflow-icon">✦</div>
             <h3>Drone Mapping</h3>
-            <p>
-              Orthomosaic generation and aerial site analysis.
-            </p>
-          </div>
+            <p>High-resolution orthomosaic imagery, site analysis, and topographic mapping.</p>
+          </article>
 
+          <article class="workflow-card">
+            <div class="workflow-icon">◉</div>
+            <h3>LiDAR</h3>
+            <p>LiDAR data collection and processing for accurate terrain and site models.</p>
+          </article>
         </div>
-
       </div>
     </section>
-
   </main>
 
-  <footer>
-    <div class="footer-bottom">
-      © 2026 KDS CAD — Digital Solutions
-    </div>
-  </footer>
-
   <script src="js/script.js"></script>
-
 </body>
 </html>
