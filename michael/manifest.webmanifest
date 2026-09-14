@@ -1,0 +1,14 @@
+{
+  "name": "Michael Kincaid | KDSCAD",
+  "short_name": "Michael | KDS",
+  "description": "Digital business card for Michael Kincaid, Founder | Owner of Kincaid Design Solutions.",
+  "start_url": "/michael/",
+  "scope": "/michael/",
+  "display": "standalone",
+  "background_color": "#020812",
+  "theme_color": "#06111f",
+  "icons": [
+    {"src":"assets/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#06111f" />
+  <meta name="description" content="Michael Kincaid — Founder | Owner, Kincaid Design Solutions. Digital Civil Design & Reality Capture." />
+  <meta property="og:title" content="Michael Kincaid | Kincaid Design Solutions" />
+  <meta property="og:description" content="Digital Civil Design & Reality Capture — Precision Through Design." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://kdscad.com/michael" />
+  <meta property="og:image" content="https://kdscad.com/michael/assets/social-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Michael Kincaid | KDSCAD</title>
+</head>
+<body>
+  <div class="blueprint" aria-hidden="true">
+    <span class="bp-circle bp-a"></span>
+    <span class="bp-circle bp-b"></span>
+    <span class="bp-line bp-h"></span>
+    <span class="bp-line bp-v"></span>
+    <span class="bp-line bp-d"></span>
+  </div>
+
+  <main class="shell">
+    <section class="card" aria-labelledby="name">
+      <div class="shine" aria-hidden="true"></div>
+
+      <header class="brand">
+        <img class="logo" src="assets/kds-logo-mark.png" alt="KDS — Kincaid Design Solutions" />
+        <p class="company">KINCAID DESIGN SOLUTIONS</p>
+        <p class="tagline">PRECISION THROUGH DESIGN</p>
+      </header>
+
+      <div class="identity">
+        <p class="eyebrow">DIGITAL CIVIL DESIGN &amp; REALITY CAPTURE</p>
+        <h1 id="name">MICHAEL KINCAID</h1>
+        <p class="title">FOUNDER <span>|</span> OWNER</p>
+      </div>
+
+      <div class="primary-actions" role="group" aria-label="Primary contact actions">
+        <a class="btn btn-primary" href="assets/michael-kincaid.vcf" download>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14"/></svg>
+          Save Contact
+        </a>
+        <button class="btn btn-secondary" id="shareBtn" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 16V4m0 0L8 8m4-4 4 4M5 11v8h14v-8"/></svg>
+          Share Card
+        </button>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact" href="tel:+13527582718">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 4.5 10 8 8.5 10c1.2 2.5 3 4.3 5.5 5.5l2-1.5 3.5 2.5-.8 3c-.2.7-.9 1.2-1.6 1.2C9.5 20.7 3.3 14.5 3.3 6.9c0-.7.5-1.4 1.2-1.6l3-.8Z"/></svg></span>
+          <span><small>CALL</small>(352) 758-2718</span>
+        </a>
+        <a class="contact" href="mailto:mwk@kdscad.com">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg></span>
+          <span><small>EMAIL</small>mwk@kdscad.com</span>
+        </a>
+        <a class="contact" href="https://kdscad.com/">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></span>
+          <span><small>WEBSITE</small>kdscad.com</span>
+        </a>
+        <button class="contact contact-button" id="qrBtn" type="button">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v6h-6v-2h4zM14 17h2v3h-2z"/></svg></span>
+          <span><small>SCAN</small>Show QR Code</span>
+        </button>
+      </div>
+
+      <div class="divider"><span></span><i></i><span></span></div>
+
+      <div class="service-chips" aria-label="KDS services">
+        <span>Civil Design</span>
+        <span>3D Modeling</span>
+        <span>Scan-to-CAD</span>
+        <span>Drone Mapping</span>
+        <span>LiDAR</span>
+      </div>
+
+      <div class="secondary-actions">
+        <a href="https://kdscad.com/projects.html" class="text-link">View Projects <span>→</span></a>
+        <a href="https://kdscad.com/contact.html" class="text-link accent">Start a Project <span>→</span></a>
+      </div>
+
+      <p class="micro">Transforming design intent into buildable solutions.</p>
+    </section>
+
+    <footer class="footer">
+      <button id="installBtn" class="install" type="button" hidden>Add to Home Screen</button>
+      <p>© <span id="year"></span> Kincaid Design Solutions, Inc.</p>
+    </footer>
+  </main>
+
+  <dialog id="qrDialog" class="qr-dialog">
+    <button class="close" id="closeQr" type="button" aria-label="Close QR code">×</button>
+    <img src="assets/qr-kds.png" alt="QR code for kdscad.com/michael" />
+    <strong>SCAN TO SAVE MY CARD</strong>
+    <span>kdscad.com/michael</span>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
