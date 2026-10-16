@@ -1,0 +1,9 @@
+tests/
+node_modules/
+README.md
+public/
+files.zip
+images/*.zip
+images/*.pdf
+Digitized Site.png
+images/Digitized Site.png

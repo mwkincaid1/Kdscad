@@ -16,7 +16,7 @@ shareBtn.addEventListener('click', async () => {
   const data = {
     title: 'Michael Kincaid | Kincaid Design Solutions',
     text: 'Michael Kincaid — Founder | Owner, Kincaid Design Solutions',
-    url: 'https://kdscad.com/michael'
+    url: 'https://kdscad.com/michael/'
   };
   try {
     if (navigator.share) {
@@ -53,10 +53,15 @@ installBtn.addEventListener('click', async () => {
     showToast('On iPhone: Share → Add to Home Screen');
     return;
   }
-  deferredPrompt.prompt();
-  await deferredPrompt.userChoice;
-  deferredPrompt = null;
-  installBtn.hidden = true;
+  try {
+    await deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+  } catch {
+    showToast('Installation unavailable. Try your browser’s install menu.');
+  } finally {
+    deferredPrompt = null;
+    installBtn.hidden = true;
+  }
 });
 
 // iOS does not fire beforeinstallprompt; show a small optional install helper.
@@ -69,6 +74,7 @@ if (isIOS && !isStandalone) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
+      .catch(error => console.warn('Business card offline support unavailable', error));
   });
 }
